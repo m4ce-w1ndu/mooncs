@@ -4,7 +4,7 @@ using System.Reflection;
 namespace AGCCore.Core
 {
     /// <summary>
-    /// 
+    /// C# implementation of a bitfield struct attribute
     /// </summary>
     public sealed class BitfieldLengthAttribute : Attribute
     {
@@ -18,6 +18,9 @@ namespace AGCCore.Core
 
     internal class ConversionUtility
     {
+        /// <summary>
+        /// Converts a bitfield struct value to long
+        /// </summary>
         public static long ToLong<T>(T t) where T: struct
         {
             long result = 0;
