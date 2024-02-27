@@ -35,4 +35,10 @@ namespace AGCCore.Symbols
         /// </summary>
         public static const int MAX_SOURCE_FILES = 128;
     }
+
+    public struct Address
+    {
+        [BitfieldLength(1)]
+        public long Invalid { get; set; }
+    }
 }
